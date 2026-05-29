@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS 적용방법 연습</title>
+        <!-- 스타일을 적용하는 3가지 방법 -->
+        <!-- 1.외부 스타일시트(별도의 .css 문서를 작성하고 연결) -->
+        <link rel="stylesheet" href="./02_test.css">
+
+        <!-- 2.내부 스타일 시트 --> 
+        <style>
+            /* 이 영역 안에서는 css 언어의 문법 체계를 따름 */
+            p{font-style: italic; color: red !important;}
+            /* 외부 스타일과 내부 스타일은 우선순위 동일 나중에 쓴 게 우선시 */
+        </style>
+
+    
+    </head>
+    <body>
+        <!-- 3. 인라인 스타일 (!important 제외 가장 우선순위) -->
+        <p style="font-weight: bold; color: green;">Hello world</p>
+
+    </body>
+</html>
