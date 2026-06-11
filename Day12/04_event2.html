@@ -139,7 +139,11 @@
             // regExp=/^[a-z]?$/ 오직 영어 소문자 0글자 or 1글자 (=값이 없어도 ok)
             // regExp=/^[a-z]+$/ 오직 영어 소문자 1글자 이상...
             // regExp=/^\d$/; 오직 숫자 1개
-            regExp=/^\d\d\d$/; //오직 숫자 3개
+            // regExp=/^\d\d\d$/; //오직 숫자 3개
+            // regExp=/^\d{3,4}$/; 숫자 3~4개
+            // regExp=/^\d\d-\d\d-\d\d$/; //숫자 패턴 만들기
+            // regExp=/^[a-zA-Z0-9]+@[a-z]+.[a-z]+$/; //이메일 #####@###.##
+            // regExp=/^http:/; //URL 주소를 올바로 입력하도록 요구
 
             //사용자가 input 요소에 입력한 글씨가 위 규칙에 맞는지 검사
             var in4=document.getElementById('in4');
