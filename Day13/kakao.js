@@ -87,24 +87,3 @@ for (var i = 0; i < positions.length; i ++) {
 }
 
 //==========================================
-navigator.geolocation.getCurrentPosition(function(position){
-
-    let lat = position.coords.latitude;
-    let lng = position.coords.longitude;
-
-    let container = document.getElementById("map");
-
-    let options = {
-        center: new kakao.maps.LatLng(lat, lng),
-        level: 3
-    };
-
-    let map = new kakao.maps.Map(container, options);
-
-    let marker = new kakao.maps.Marker({
-        position: new kakao.maps.LatLng(lat, lng)
-    });
-
-    marker.setMap(map);
-
-});
